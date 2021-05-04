@@ -1,6 +1,6 @@
 package okulYonetimi;
 
-public class Ogrenci extends Kisi{
+public class Ogrenci extends Kisi {
 
     private String numara;
     private String sinif;
@@ -25,5 +25,14 @@ public class Ogrenci extends Kisi{
 
     public void setSinif(String sinif) {
         this.sinif = sinif;
+    }
+
+    @Override
+    public String toString() {
+        return "AdSoyad=" + getAdSoyad()
+                + ", KimlikNo=" + getKimlikNo()
+                + ", Yas=" + getYas()
+                + " numara=" + numara
+                + ", sınıf=" + sinif;
     }
 }

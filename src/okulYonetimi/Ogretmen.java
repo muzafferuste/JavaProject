@@ -1,6 +1,6 @@
 package okulYonetimi;
 
-public class Ogretmen extends Kisi{
+public class Ogretmen extends Kisi {
 
     private String bolum;
     private String sicilNo;
@@ -25,5 +25,14 @@ public class Ogretmen extends Kisi{
 
     public void setSicilNo(String sicilNo) {
         this.sicilNo = sicilNo;
+    }
+
+    @Override
+    public String toString() {
+        return "AdSoyad=" + getAdSoyad()
+                + ", KimlikNo=" + getKimlikNo()
+                + ", Yaş=" + getYas()
+                + ", bolum=" + bolum
+                + ", sicilNo=" + sicilNo;
     }
 }
